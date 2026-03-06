@@ -1,0 +1,11 @@
+<?php
+/** @var \Citytech\GooglePin\Block\MapConfig $block */
+?>
+<?php if (!$block->isEnabled()): ?>
+    <?php return; ?>
+<?php endif; ?>
+<script>
+    window.citytechGooglePinConfig = <?= /* @noEscape */ $block->getConfigJson() ?>;
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<?= $block->escapeHtmlAttr($block->getApiKey()) ?>&libraries=places"></script>
+<script defer src="<?= $block->escapeUrl($block->getViewFileUrl('Citytech_GooglePin::js/google-pin.js')) ?>"></script>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <citytech_googlepin>
+            <general>
+                <enabled>1</enabled>
+                <api_key></api_key>
+                <default_lat>37.4221</default_lat>
+                <default_lng>-122.0841</default_lng>
+                <default_zoom>14</default_zoom>
+            </general>
+        </citytech_googlepin>
+    </default>
+</config>
